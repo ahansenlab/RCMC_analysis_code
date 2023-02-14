@@ -1,4 +1,4 @@
-# RCMC Analysis Scripts
+# RCMC Analysis Code
 This repository contains source code for the article [Region Capture Micro-C reveals coalescence of enhancers and promoters into nested microcompartments](https://www.biorxiv.org/content/10.1101/2022.07.12.499637v1), used in the analysis of RCMC data. 
 
 Code is provided either in the form of Python/R scripts or as Jupyter notebooks to be run in conda environments containing the required packages.
