@@ -16,7 +16,9 @@ Python script used to align reads in .fastq format from paired-end sequencing of
 
 Example usage:
 
-`python /path/to/script/microcbowtie2.py --file_1 pair1.fastq --file_2 pair2.fasq -g mm39 -t 36 -o exampleoutput`
+```
+python /path/to/script/microcbowtie2.py --file_1 pair1.fastq --file_2 pair2.fasq -g mm39 -t 36 -o exampleoutput
+```
 
 ### ChIP-seq alignment (spikeinChIP_PE_alignment.py)
 Required packages:
@@ -28,7 +30,9 @@ Python script used to align reads in .fastq format from paired-end sequencing of
 
 Example usage:
 
-`python /path/to/script/spikeinChIP_PE_alignment.py -f list_of_fastqs.tsv -g mm39 -t 36 -o alignmentcountsout`
+```
+python /path/to/script/spikeinChIP_PE_alignment.py -f list_of_fastqs.tsv -g mm39 -t 36 -o alignmentcountsout
+```
 
 ### Finding chromatin features overlapping microcompartment anchors (loopFeatureOverlap.R)
 Required packages:
@@ -46,7 +50,9 @@ R script used to classify microcompartment interactions by finding overlap betwe
 
 Example usage:
 
-`Rscript /path/to/script/loopFeatureOverlap.R -l interactions.bedpe -b promoter.bed,enhancer.bed -i P,E -o outputdirectory/`
+```
+Rscript /path/to/script/loopFeatureOverlap.R -l interactions.bedpe -b promoter.bed,enhancer.bed -i P,E -o outputdirectory/
+```
 
 ### Calculating strength of individual interactions (LoopStrengthRCMC.ipynb) or aggregate pileup analysis (PileupsRCMC.ipynb)
 Required packages:
