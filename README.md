@@ -39,7 +39,7 @@ Required packages:
 -	plyr
 -	dplyr
 -	reshape2
--	purr
+-	purrr
 -	grid
 -	IRanges
 -	GenomicRanges
