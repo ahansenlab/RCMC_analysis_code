@@ -1,7 +1,8 @@
 # RCMC Analysis Code
-This repository contains source code for the article [Region Capture Micro-C reveals coalescence of enhancers and promoters into nested microcompartments](https://www.biorxiv.org/content/10.1101/2022.07.12.499637v1), used in the analysis of RCMC data. 
+This repository contains source code for the article [Region Capture Micro-C reveals coalescence of enhancers and promoters into nested microcompartments](https://www.nature.com/articles/s41588-023-01391-1), used in the analysis of RCMC data. 
 
 Code is provided either in the form of Python/R scripts or as Jupyter notebooks to be run in conda environments containing the required packages. Additionally, genomic positions of microcompartments identified in the paper are included in bedpe format.
+
 ## Code summary
 ### Micro-C alignment (microcbowtie2.py)
 Required packages:
@@ -90,3 +91,15 @@ Jupyter notebook used to confirm successful ICE balancing of .mcool files by cal
 
 ### List of manually-annotated microcompartment loops (MicrocompartmentLoops_PlusMin1kb.bedpe)
 BEDPE format file listing all 1091 manually-annotated microcompartment loops across the Ppm1g (chr5) and Klf1 (chr8) regions used in the microcompartment analysis scripts above. Coordinates are provided for the mm39 reference genome, and loop anchors are listed as plus-and-minus 1kb from each anchor’s point coordinate. Columns in the file are as follows: the first is the chromosome of the left loop anchor, the second is the coordinate of the left loop anchor minus 1 kb, the third is the coordinate of the left loop anchor plus 1 kb, and the remaining three columns are the same for the right loop anchor.
+
+### Lists of probes used for capturing regions of interest (captureprobes_mm10.bed, captureprobes_mm39.bed)
+BED format file listing the genomic locations of all probes used for capturing the Sox2 (chr3), Ppm1g (chr5), Nanog (chr6), Klf1 (chr8), and Fbn2 (chr18) regions used in the microcompartment analysis scripts above. Coordinates are provided for both the mm10 and mm39 reference genomes, and loop anchors are listed as plus-and-minus 1kb from each anchor’s point coordinate. Columns in the file are as follows: the first is the chromosome the region is located on, the second is the start coordinate of the probe, and the third is the end coordinate probe.
+
+## How to cite
+This work is shared under an MIT license. If you make use of analysis scripts or data from this work, please cite as follows:
+
+Goel, V.Y., Huseyin, M.K. & Hansen, A.S. Region Capture Micro-C reveals coalescence of enhancers and promoters into nested microcompartments. *Nat Genet* (2023). https://doi.org/10.1038/s41588-023-01391-1
+
+Also refer to our deposited and citable code on Zenodo:
+
+Goel, Viraat Y, Huseyin, Miles K, & Hansen, Anders S. (2023). Code supporting Region Capture Micro-C reveals coalescence of enhancers and promoters into nested microcompartments (1.0). Zenodo. https://doi.org/10.5281/zenodo.7641852
